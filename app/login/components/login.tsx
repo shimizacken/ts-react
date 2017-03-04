@@ -8,9 +8,13 @@ export interface ILoginProps {
 export class Login extends React.Component<ILoginProps, undefined> {
     render(){
         return(<div>
-                <label>User Name</label><br />
+                <div>
+                    <label>User Name</label>
+                </div>
                 <input type="text" value={this.props.userName} />
-                <label>User Name</label><br />
+                <div>
+                    <label>Password</label><br />
+                </div>
                 <input type="password" value={this.props.password} />
             </div>
         );
